@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_order_form_approval" model="ir.ui.view">
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_approve_order"
+                    type="object"
+                    string="Approve Order"
+                    class="btn-primary"
+                    groups="odoo_sale_credit_approval.group_sale_approver"
+                    modifiers="{
+                        'invisible': [
+                            '|',
+                            ['approved', '=', True],
+                            ['requires_approval', '=', False]
+                        ]
+                    }"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

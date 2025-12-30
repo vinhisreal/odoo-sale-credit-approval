@@ -1,0 +1,16 @@
+<odoo>
+    <record id="view_partner_form_credit" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//notebook/page[@name='sales_purchases']" position="inside">
+                <group string="Credit Control">
+                    <field name="credit_limit"/>
+                    <field name="total_debt" readonly="1"/>
+                </group>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

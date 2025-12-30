@@ -1,5 +1,20 @@
 # Sale Credit Limit & Approval (Odoo Module)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Odoo_logo.svg" width="120" />
+</p>
 
+<h1 align="center">Sale Credit Limit & Approval</h1>
+
+<p align="center">
+  <b>Odoo Module – Credit Control & Approval Workflow</b><br/>
+  Built with <code>Python</code> & <code>Odoo ORM</code>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Odoo-18-purple" />
+  <img src="https://img.shields.io/badge/Python-3.12-blue" />
+  <img src="https://img.shields.io/badge/Status-Stable-success" />
+</p>
 ## Overview
 This module implements **credit limit control** and an **approval workflow** for Sales Orders in Odoo.  
 It prevents users from confirming Sales Orders that exceed a customer's credit limit or a predefined approval threshold without proper authorization.
